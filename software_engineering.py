@@ -6,14 +6,6 @@ def encode_password(password):
     return encoded_password
 
 
-# def decode_password(encoded_password):
-#     decoded_password = ""
-#     for num in encoded_password:
-#         new_num = str((int(num) - 3) % 10)
-#         decoded_password += new_num
-#     return decoded_password
-
-
 if __name__ == "__main__":
     Continue = True
     original_password = ""
