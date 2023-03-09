@@ -9,6 +9,7 @@ def encode_password(password):
 if __name__ == "__main__":
     Continue = True
     original_password = ""
+    password_encoded = encode_password(original_password)
     while Continue is True:
         print("\nMenu")
         print("-------------")
@@ -20,6 +21,6 @@ if __name__ == "__main__":
             original_password = str(input("Please enter your password to encode: "))
             print("Your password has been encoded and stored!")
         elif option == 2:
-            print("The encoded password is ", encode_password(original_password), ", and the original password is ", original_password, sep="")
+            print("The encoded password is ", encode_password(original_password), ", and the original password is ", password_encoded, sep="")
         elif option == 3:
             break
